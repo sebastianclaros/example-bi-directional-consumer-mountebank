@@ -15,7 +15,6 @@ export const stopStubs = () => {
 
 export const startAndClearStubs = () => {
   spawn("mb", ["restart", "--debug", "true"]);
-
   return waitPort({
     port: mbPort,
     host: "localhost",
